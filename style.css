@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #E9EFEC;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color: #16423C;
+    font-weight: 700;
+    font-size: 40px;
+}
+.main #input{
+    margin-top: 40px;
+    width: 300px;
+    height: 40px;
+    background-color: #C4DAD2;
+    border-radius: 8px;
+    border: none;
+    color: #16423C;
+    font-weight: bold;
+    padding-left: 20px;
+    caret-color: #16423C;
+    font-family: myfamily;
+    font-size: 20px;
+    padding-top: 2px;
+
+}
+.main #input::placeholder{
+    color: #6A9C89;
+}
+.main #input:focus{
+    outline: 0;
+}
+
+.main .btn{
+    border: none;
+    border-radius: 8px;
+    background-color: #C4DAD2;
+    height: 40px;
+    width: 50px;
+    color: #6A9C89;
+    font-size: 20px;
+    padding: 0px;
+    
+}
+
+.main .btn:hover{
+    border: 2px solid #6A9C89;
+    opacity: 75%;
+}
+
+.todoList{
+   
+    list-style-type: none;
+    margin-top: 40px;
+    max-height: 400px;
+    width: 400px;
+    overflow-y:scroll;
+}
+
+.todoList li{
+    padding-left: 10px;   
+    color: #16423C;
+    font-size: large;
+    font-family: myfamily;
+    font-weight: 700;
+    background-color: #C4DAD2;
+    margin-top: 10px;
+    border-radius: 7px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    padding-top: -2px;
+    padding-bottom: 3px;
+}
+
+
+input[type="checkbox"]:checked + label{
+    text-decoration: line-through;
+    color: #6A9C89;
+
+}
+li label{
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+li .checkBox{
+    margin-top: 8px;
+}
+.itemLabel{
+    background-color: transparent !important;
+}
+input[type="checkbox"]{
+    height: 15px;
+    width: 15px;
+    accent-color: #16423C;    
+}
+input[type="checkbox"]:hover{
+    accent-color: var(#16423C);
+}
+.container2{
+    margin-top: 2px;
+}
+
+/* //block */
+.editBtn{
+    cursor: pointer;
+    border: none;
+    background-color: #E9EFEC;
+    color: #C4DAD2;
+    border-radius: 5px;
+    height: 20px;
+    width: 20px;
+    margin-right:10px ;
+}
+.editBtn img{
+    height: 15px;
+    padding-top: 2px;
+    color: #16423C;
+}
+.editBtn:hover{
+    border: 1px solid #16423C;
+    opacity: 75%;
+    /* margin-top: 0px; */
+}
+.removeBtn{
+    cursor: pointer;
+    border: none;
+    background-color: #E9EFEC;
+    color: #C4DAD2;
+    border-radius: 5px;
+    height: 20px;
+    width: 20px;
+    margin-right:10px ;
+}
+
+.removeBtn img{
+    height: 15px;
+    padding-top: 2px;
+    color: #16423C;
+}
+ .removeBtn:hover{
+    border: 1px solid #16423C;
+    opacity: 75%;
+    /* margin-top: 0px; */
+}
+.removeBtn:hover + img{
+    height: 15px;
+    padding-top: 2px;
+    color: #16423C;
+}
+.editInput{
+    background-color: transparent;
+    border: none;
+    color: #16423C;
+    font-size: large;
+    font-family: myfamily;
+    font-weight: 700;
+    background-color: #C4DAD2;
+    padding-left: 10px;   
+
+}
+.editInput:focus{
+    outline: none;
+}
+
+@font-face{
+  font-family: myfamily;
+  src: url(/font/OldStandardTT-Regular.ttf);
+}
